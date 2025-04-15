@@ -26,16 +26,34 @@ const initialBuildings = [
 ];
 
 export default function App() {
-  const [buildings, setBuildings] = useState(() =>
-    initialBuildings.map(b => ({ ...b, cost: '' }))
-  );
   const [darkMode, setDarkMode] = useState(false);
-  const [prestigeLevel, setPrestigeLevel] = useState(0);
-  const [cps, setCps] = useState('');
+  const [buildings, setBuildings] = useState(() => {
+    const saved = localStorage.getItem('buildings');
+    return saved ? JSON.parse(saved) : initialBuildings.map(b => ({ ...b, cost: '' }));
+  });
+
+  const [prestigeLevel, setPrestigeLevel] = useState(() => {
+    const saved = localStorage.getItem('prestigeLevel');
+    return saved ? parseInt(saved) : 0;
+  });
+
+  const [cps, setCps] = useState(() => {
+    const saved = localStorage.getItem('cps');
+    return saved || '';
+  });
+
+  // Save everything when changed
+  useEffect(() => {
+    localStorage.setItem('buildings', JSON.stringify(buildings));
+  }, [buildings]);
 
   useEffect(() => {
-    localStorage.setItem("cookieChecker", JSON.stringify(buildings));
-  }, [buildings]);
+    localStorage.setItem('prestigeLevel', prestigeLevel.toString());
+  }, [prestigeLevel]);
+
+  useEffect(() => {
+    localStorage.setItem('cps', cps.toString());
+  }, [cps]);
 
   const handleChange = (index, value) => {
     const updated = [...buildings];
@@ -44,9 +62,11 @@ export default function App() {
   };
 
   const handleReset = () => {
-    const reset = buildings.map(b => ({ ...b, cost: '' }));
+    const reset = initialBuildings.map(b => ({ ...b, cost: '' }));
     setBuildings(reset);
-    localStorage.removeItem("cookieChecker");
+    setPrestigeLevel(0);
+    setCps('');
+    localStorage.clear();
   };
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
@@ -163,7 +183,7 @@ export default function App() {
       </div>
 
       <footer className="mt-8 p-4 text-center text-sm text-slate-400">
-        Built by Stuart | <a href="https://sglearning.netlify.app" className="underline">Portfolio</a>
+        Built by Stuart Gibson Learning | <a href="https://sglearning.netlify.app" className="underline">Portfolio</a>
       </footer>
     </div>
   );
