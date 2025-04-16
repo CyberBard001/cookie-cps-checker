@@ -1,0 +1,125 @@
+[
+    {
+      "id": "getLucky",
+      "name": "Get Lucky",
+      "cost": 777777777,
+      "type": "goldenCpsBoost",
+      "multiplier": 0.1,
+      "notes": "+10% CPS due to increased golden cookie effect duration"
+    },
+    {
+      "id": "goldHoards",
+      "name": "Gold Hoards",
+      "cost": 1234567890,
+      "type": "goldenCpsBoost",
+      "multiplier": 0.15,
+      "notes": "+15% CPS from golden cookie frequency buffs"
+    },
+    {
+      "id": "luckyDigit",
+      "name": "Lucky Digit",
+      "cost": 10000000,
+      "type": "goldenCpsBoost",
+      "multiplier": 0.01,
+      "notes": "+1% CPS (synergy with golden cookie combos)"
+    },
+    {
+      "id": "luckyNumber",
+      "name": "Lucky Number",
+      "cost": 10100000,
+      "type": "goldenCpsBoost",
+      "multiplier": 0.02,
+      "notes": "+2% CPS from lucky effects"
+    },
+    {
+      "id": "luckyPayout",
+      "name": "Lucky Payout",
+      "cost": 505050505,
+      "type": "goldenCpsBoost",
+      "multiplier": 0.05,
+      "notes": "+5% CPS due to lucky chain payout boosts"
+    },
+    {
+      "id": "goldenSwitch",
+      "name": "Golden Switch [on]",
+      "cost": 999999999,
+      "type": "goldenCpsBoost",
+      "multiplier": 0.5,
+      "notes": "+50% CPS while golden switch is active"
+    }
+    ,
+  {
+    "id": "radiantAppetite",
+    "name": "Radiant Appetite",
+    "cost": 8888888888,
+    "type": "dragonCpsBoost",
+    "multiplier": 0.05,
+    "notes": "+5% CPS from Radiant Appetite dragon aura"
+  },
+  {
+    "id": "dragonGod",
+    "name": "Dragon God",
+    "cost": 123456789012,
+    "type": "dragonCpsBoost",
+    "multiplier": 0.10,
+    "notes": "+10% CPS from Dragon God aura"
+  },
+  {
+    "id": "dragonOrbs",
+    "name": "Dragon Orbs",
+    "cost": 6666666666,
+    "type": "goldenCpsBoost",
+    "multiplier": 0.05,
+    "notes": "+5% CPS from golden cookie synergy boost (dragon)"
+  }
+  ,
+  {
+    "id": "festiveBiscuit",
+    "name": "Festive Biscuit",
+    "cost": 250000000,
+    "type": "flat",
+    "cpsGain": 5000,
+    "notes": "+5,000 CPS from Christmas event"
+  },
+  {
+    "id": "santasHelpers",
+    "name": "Santa's Helpers",
+    "cost": 500000000,
+    "type": "seasonalCpsBoost",
+    "multiplier": 0.03,
+    "notes": "+3% CPS from Christmas upgrade"
+  },
+  {
+    "id": "elfTwinklies",
+    "name": "Elf Twinklies",
+    "cost": 750000000,
+    "type": "seasonalCpsBoost",
+    "multiplier": 0.04,
+    "notes": "+4% CPS boost from Christmas lights"
+  },
+  {
+    "id": "chocolateEgg",
+    "name": "Chocolate Egg",
+    "cost": 999999999,
+    "type": "seasonalCpsBoost",
+    "multiplier": 0.05,
+    "notes": "+5% CPS during Easter event"
+  },
+  {
+    "id": "bunnyEars",
+    "name": "Bunny Ears",
+    "cost": 450000000,
+    "type": "seasonalCpsBoost",
+    "multiplier": 0.02,
+    "notes": "+2% CPS boost during Easter"
+  },
+  {
+    "id": "valentineCookies",
+    "name": "Valentine Cookies",
+    "cost": 100000000,
+    "type": "flat",
+    "cpsGain": 2000,
+    "notes": "Flat +2,000 CPS from Valentine's event"
+  }
+  ]
+  
