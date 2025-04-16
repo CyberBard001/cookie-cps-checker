@@ -228,13 +228,27 @@ export default function App() {
                 )}
               </div>
 
-              <footer className="mt-8 p-4 text-center text-sm text-slate-400">
-                Built by Stuart Gibson Learning | <a href="https://sglearning.netlify.app" className="underline">Portfolio</a>
-              </footer>
-            </div>
-          }
-        />
-      </Routes>
-    </Router>
-  );
+<div className="px-6 max-w-6xl mx-auto mt-8">
+  <h3 className="text-lg font-semibold mb-2">💡 Cookie Number Reference</h3>
+  <ul className="text-sm text-slate-700 dark:text-slate-300 list-disc list-inside space-y-1">
+    <li>1,000 = 1 Thousand</li>
+    <li>1,000,000 = 1 Million</li>
+    <li>1,000,000,000 = 1 Billion</li>
+    <li>1,000,000,000,000 = 1 Trillion</li>
+    <li>1,000,000,000,000,000 = 1 Quadrillion</li>
+    <li>1,000,000,000,000,000,000 = 1 Quintillion</li>
+    <li>1,000,000,000,000,000,000,000 = 1 Sextillion</li>
+    <li>1,000,000,000,000,000,000,000,000 = 1 Septillion</li>
+  </ul>
+</div>
+
+<footer className="mt-8 p-4 text-center text-sm text-slate-400">
+  Built by Stuart Gibson Learning | <a href="https://sglearning.netlify.app" className="underline">Portfolio</a>
+</footer>
+</div>
+}
+/>
+</Routes>
+</Router>
+);
 }
