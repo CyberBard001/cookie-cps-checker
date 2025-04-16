@@ -136,6 +136,27 @@ export default function App() {
                     className={`w-full p-3 border rounded focus:outline-none focus:ring-4 focus:ring-purple-300 
                       ${darkMode ? 'bg-slate-800 text-white placeholder:text-slate-400 border-slate-600' : 'bg-white text-black'}`}
                   />
+
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+                    <div>
+                      <label className="block text-sm font-medium mb-1">CPS per Minute</label>
+                      <input
+                        type="text"
+                        readOnly
+                        value={(parseFloat(cps || 0) * 60).toLocaleString()}
+                        className={`w-full p-2 border rounded bg-slate-100 ${darkMode ? 'bg-slate-700 text-white border-slate-600' : 'text-slate-800'}`}
+                      />
+                    </div>
+                    <div>
+                      <label className="block text-sm font-medium mb-1">CPS per Hour</label>
+                      <input
+                        type="text"
+                        readOnly
+                        value={(parseFloat(cps || 0) * 3600).toLocaleString()}
+                        className={`w-full p-2 border rounded bg-slate-100 ${darkMode ? 'bg-slate-700 text-white border-slate-600' : 'text-slate-800'}`}
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <div className="mb-4">
